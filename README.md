@@ -1,5 +1,7 @@
 # Backend for Ad Performance Analyzer
-This is backend of an Ad Performance Analyzer web application built using Node.js & Express.js leveraging LangChain LLM framework & OpenAI LLM API.
+This is the backend of an Ad Performance Analyzer web application built using Node.js & Express.js leveraging LangChain LLM framework & OpenAI LLM API.
+
+---
 
 ## Features
 - **File Processing:** Accept CSV input files for bulk ad data processing.
@@ -7,14 +9,17 @@ This is backend of an Ad Performance Analyzer web application built using Node.j
 - **Suggestions for Improvement:** Provide actionable insights to enhance ad performance.
 - **Keyword Analysis:** Identify high-performing and low-performing keywords.
 
+---
+
 ## Tech Stack
 - **Node.js:** JavaScript runtime for building server-side applications.
 - **Express.js:** Web framework for handling API routes.
 - **Multer:** Middleware for handling file uploads.
 - **CSV Parser:** Library for parsing and processing CSV files.
-- **LLM Framework:** LangChain
-- **LLM API:** OpenAI
+- **LangChain:** LLM Framework
+- **OpenAI:** LLM API
 
+---
 
 ## Installation
 
@@ -31,6 +36,8 @@ This is backend of an Ad Performance Analyzer web application built using Node.j
 3. **Set Up Environment Variables:**
    Create a `.env` file in the root directory and add the required environment variables.
 
+---
+
 ## Environment Variables
 The application requires the following environment variables:
 
@@ -38,6 +45,8 @@ The application requires the following environment variables:
 PORT=8000
 OPENAI_API_KEY=your_openai_api_key
 ```
+
+---
 
 ## API Endpoints
 
@@ -61,11 +70,15 @@ OPENAI_API_KEY=your_openai_api_key
   - `200 OK`: Analysis summary, high performing & low performing keywords.
   - `500 Internal Server Error`: If error occurs during file analysis.
 
+---
+
 ## Running the Server
    ```bash
    npm start
    ```
    The server will start at `http://localhost:8000`.
+
+---
 
 ## Error Handling
 - **Insufficient Quota:** Check your OpenAI API usage and adjust your plan if needed.
