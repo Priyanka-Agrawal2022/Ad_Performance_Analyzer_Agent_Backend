@@ -104,7 +104,11 @@ module.exports.analyze = function (req, res) {
         index++;
       })
       .on("end", async () => {
-        fs.unlinkSync(filePath);
+        fs.rm(uploadDir, { recursive: true, force: true }, (err) => {
+          if (err) {
+            console.error("Error deleting uploads directory:", err);
+          }
+        });
 
         const model = new ChatOpenAI({
           apiKey: process.env.OpenAI_API_KEY,
