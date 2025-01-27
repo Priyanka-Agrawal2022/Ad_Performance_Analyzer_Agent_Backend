@@ -1,0 +1,22 @@
+{
+  "name": "adperformanceanalyzeragent",
+  "version": "1.0.0",
+  "description": "Ad Performance Analyzer Agent",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyanka Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^0.3.36",
+    "@langchain/openai": "^0.4.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "langchain": "^0.3.13",
+    "multer": "^1.4.5-lts.1"
+  }
+}
