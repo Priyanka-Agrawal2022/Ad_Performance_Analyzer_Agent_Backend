@@ -18,6 +18,7 @@ This is the backend of an Ad Performance Analyzer web application built using No
 - **CSV Parser:** Library for parsing and processing CSV files.
 - **LangChain:** LLM Framework
 - **OpenAI:** LLM API
+- **Hosting:** Render
 
 ---
 
