@@ -1,4 +1,4 @@
-# Backend for Ad Performance Analyzer
+# Ad Performance Analyzer Backend
 This is the backend of an Ad Performance Analyzer web application built using Node.js & Express.js leveraging LangChain LLM framework & OpenAI LLM API.
 
 ---
