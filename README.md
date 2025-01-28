@@ -73,6 +73,10 @@ OPENAI_API_KEY=your_openai_api_key
 
 ---
 
+## Architecture Diagram
+![Architecture Diagram](image.png)
+---
+
 ## Running the Server
    ```bash
    npm start
@@ -85,3 +89,21 @@ OPENAI_API_KEY=your_openai_api_key
 - **Insufficient Quota:** Check your OpenAI API usage and adjust your plan if needed.
 - **Invalid File Format:** Ensure uploaded files are in CSV format.
 - **API Errors:** Refer to OpenAI API documentation for details on error codes.
+
+---
+
+## Assumptions
+- **Target Audience:** The primary users of this tool are digital marketers, advertisers, and e-commerce sellers managing online ad campaigns. They have basic familiarity with ad performance metrics like ROAS, ACOS, CTR, and Conversion Rates.
+- **Data Format:** The ad performance data is assumed to be provided in a CSV file with specific header names.
+- **API Key Configuration:** Users deploying the backend are expected to configure their API keys like OpenAPI key securely via environment variables.
+- **Single User Context:** The current version assumes a single user or session at a time and does not include multi-user or role-based access features.
+- **Static Metrics Definitions:** Metrics like "high ROAS" or "low ACOS" have predefined thresholds and are not dynamically adjusted based on industry-specific benchmarks.
+
+---
+
+## Future Improvements
+- **User Authentication and Authorization:** Implement user login and role-based access to ensure data security and personalized user experience. Each user can manage their own campaigns securely.
+- **Dashboard and Visual Analytics:** Introduce a dashboard with graphical visualizations (charts, graphs, etc.) for key performance metrics like ROAS, ACOS, CTR, and Conversion Rates.
+- **Integration with Ad Platforms:** Automate data fetching by integrating with ad platforms (e.g., Google Ads, Amazon Ads) via APIs to avoid manual CSV uploads.
+- **Multi-Language Support:** Enable multi-language support in the frontend to make the tool accessible to non-English speaking users.
+- **Real-Time Notifications and Alerts:** Implement a system to notify users of critical performance changes via email or push notifications, such as a sudden drop in ROAS or high ACOS for a specific keyword.
